@@ -12,9 +12,9 @@ int main() {
     // Array de punteros para almacenar 10 objetos Persona
     Persona* personas[10];
 
-    // Bucle para crear 10 personas con distintas edades entre 18 y 27 inclusive[cite: 1]
+    // Bucle para crear 10 personas con distintas edades entre 18 y 27 inclusive
     // Como las edades van del 18 al 27 hay exactamente 10 valores distintos,
-    // garantizando que dos personas no tengan la misma edad[cite: 1].
+    // garantizando que dos personas no tengan la misma edad
     int edad_actual = 18;
     for(int i = 0; i < 10; i++) {
         personas[i] = new Persona(edad_actual);
