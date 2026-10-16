@@ -8,8 +8,8 @@ using namespace std;
 // El constructor recibe la edad como parámetro
 Persona::Persona(int e) {
     edad = e;
-    generarGenero(); // Se establece de forma automática[cite: 1]
-    generarDNI();    // Se establece de forma automática[cite: 1]
+    generarGenero(); // Se establece de forma automática
+    generarDNI();    // Se establece de forma automática
 }
 
 Persona::~Persona() {
@@ -28,22 +28,22 @@ void Persona::generarDNI() {
     sprintf(dni, "%08d%c", numero, letra);
 }
 
-// Devuelve la edad de la persona[cite: 1]
+// Devuelve la edad de la persona
 int Persona::getEdad() {
     return edad;
 }
 
-// Devuelve el género de la persona[cite: 1]
+// Devuelve el género de la persona
 bool Persona::esMujer() {
     return genero;
 }
 
-// Establece la edad de la persona[cite: 1]
+// Establece la edad de la persona
 void Persona::setEdad(int e) {
     edad = e;
 }
 
-// Muestra un texto con toda la información de la persona[cite: 1]
+// Muestra un texto con toda la información de la persona
 void Persona::mostrar() {
     cout << "DNI: " << dni 
          << " | Edad: " << edad 
